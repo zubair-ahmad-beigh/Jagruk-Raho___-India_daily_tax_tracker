@@ -1,0 +1,64 @@
+# ============================================
+# Jagruk Raho 🇮🇳 — .gitignore
+# ============================================
+
+# ── Environment / Secrets ──────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+*.env
+secrets.yml
+application-secrets.yml
+
+# ── Java / Spring Boot ─────────────────────
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# ── Node / Next.js ─────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+frontend/.DS_Store
+
+# ── IDE / Editor ───────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── OS Files ───────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Logs ───────────────────────────────────
+*.log
+logs/
+
+# ── Docker volumes ─────────────────────────
+postgres-data/
+
+# ── Test coverage ──────────────────────────
+backend/target/site/
+coverage/
+.nyc_output/
